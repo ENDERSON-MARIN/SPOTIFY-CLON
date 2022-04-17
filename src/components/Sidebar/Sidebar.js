@@ -1,14 +1,25 @@
 import React from "react";
-import { SidebarComponent } from "./styles";
+import { SidebarContainer, Playlists } from "./styles";
+import SidebarChoice from "./SidebarChoice";
+import HomeIcon from '@material-ui/icons/Home';
+import SearchIcon from '@material-ui/icons/Search';
+import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 
 const Sidebar = () => {
   return (
-    <SidebarComponent>
+    <SidebarContainer>
         <img
         src="https://1000logos.net/wp-content/uploads/2017/08/Spotify-symbol.jpg"
         alt="logo"
       />
-    </SidebarComponent>
+      <SidebarChoice title="Home" Icon={HomeIcon}/>
+      <SidebarChoice title="Search" Icon={SearchIcon}/>
+      <SidebarChoice title="Your Library" Icon={LibraryMusicIcon}/>
+      <Playlists>Play Lists</Playlists>
+      <hr /> 
+      <SidebarChoice title="Ricardo Arjona"/>
+      <SidebarChoice title="Linkin Park"/>
+    </SidebarContainer>
   );
 };
 
