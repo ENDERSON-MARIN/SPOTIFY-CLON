@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "./Header";
 import { BodyContainer } from "./styles";
 
 const Body = () => {
   return (
     <BodyContainer>
-      <h1>Body</h1>
+      <Header/>
     </BodyContainer>
   );
 };

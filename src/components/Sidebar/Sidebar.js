@@ -12,9 +12,9 @@ const Sidebar = () => {
         src="https://1000logos.net/wp-content/uploads/2017/08/Spotify-symbol.jpg"
         alt="logo"
       />
-      <SidebarChoice title="Home" Icon={HomeIcon}/>
-      <SidebarChoice title="Search" Icon={SearchIcon}/>
-      <SidebarChoice title="Your Library" Icon={LibraryMusicIcon}/>
+      <SidebarChoice title="Inicio" Icon={HomeIcon}/>
+      <SidebarChoice title="Buscar" Icon={SearchIcon}/>
+      <SidebarChoice title="Tu Biblioteca" Icon={LibraryMusicIcon}/>
       <Playlists>Play Lists</Playlists>
       <hr /> 
       <SidebarChoice title="Ricardo Arjona"/>
