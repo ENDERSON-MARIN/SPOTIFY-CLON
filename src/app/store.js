@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import userReducer from '../features/user/userSlice';
+import tokenReducer from '../features/user/tokenSlice';
+import playlistReducer from '../features/user/PlaylistSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    user: userReducer,
+    token: tokenReducer,
+    playlist: playlistReducer,
   },
 });
