@@ -1,0 +1,15 @@
+.suffle,
+.repeat {
+  color: #00ff00;
+  transition: transform 200ms ease-in-out !important;
+}
+
+.icon {
+  transition: transform 200ms ease-in-out !important;
+}
+
+.suffle:hover,
+.repeat:hover,
+.icon:hover {
+  transform: scale(1.5);
+}

@@ -24,6 +24,7 @@ const Playlists = styled.div`
 `;
 
 const Choices = styled.div`
+  margin-left: 20px;
   display: flex;
   align-items: center;
   color: gray;
@@ -32,9 +33,6 @@ const Choices = styled.div`
   transition: 200ms color ease-in;
   &:hover {
     color: #fff;
-  }
-  & h5 {
-    margin: 10px 0 0 20px;
   }
 `;
 

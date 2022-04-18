@@ -17,8 +17,8 @@ const Sidebar = () => {
       <SidebarChoice title="Tu Biblioteca" Icon={LibraryMusicIcon}/>
       <Playlists>Play Lists</Playlists>
       <hr /> 
-      <SidebarChoice title="Ricardo Arjona"/>
-      <SidebarChoice title="Linkin Park"/>
+      <SidebarChoice title="Adolescentes Mix"/>
+      <SidebarChoice title="Ricardo Arjona Mix"/>
     </SidebarContainer>
   );
 };
