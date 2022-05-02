@@ -10,6 +10,8 @@ import SpotifyWebApi from "spotify-web-api-js";
 import { selectToken, SET_TOKEN } from "./features/user/tokenSlice";
 import { SET_PLAYLIST } from "./features/user/PlaylistSlice";
 
+const playList = process.env.REACT_APP_PLAYLIST;
+
 function App() {
   const token = useSelector(selectToken);
   const user = useSelector(selectUser);
@@ -26,7 +28,7 @@ function App() {
       spotify.getMe().then((user) => dispatch(SET_USER(user)));
       console.log("token = ", token);
       spotify
-        .getPlaylist("5XXvmcfW3novbjQQpZCZ1q")
+        .getPlaylist(playList)
         .then((playlist) => dispatch(SET_PLAYLIST(playlist)));
     }
   }, [dispatch]);
